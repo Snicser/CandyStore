@@ -1,0 +1,91 @@
+/* All styles for the general modal */
+.overlay {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 10, 10, 0.8);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+    z-index: 9000;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.custom-modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 8px;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 90%;
+    width: 700px;
+    max-height: 80%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.custom-modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-modal-header {
+    border-bottom: 1px solid #ababab;
+}
+
+.custom-modal-header .custom-modal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ff0054;
+}
+
+.custom-modal-header .close-button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff0054;
+}
+
+.custom-modal-body-text {
+    padding: 0 3rem;
+}
+
+.custom-modal-body-text #description-title {
+    font-size: 1.5rem;
+    color: #5a4f8c;
+}
+
+.description-text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #5a4f8c;
+    line-height: 1.5;
+}
+
+
+
+
+
+/*!* Make sure add to cart look nice when on mobile devices *!*/
+/*@media screen and (max-width: 768px) {*/
+/*    .custom-modal {*/
+/*        width: calc( 576px - 30px);*/
+/*        height: 75%;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 576px) {*/
+/*    .custom-modal {*/
+/*        max-width: 100%;*/
+/*        width: 90%;*/
+/*        height: 70%;*/
+/*    }*/
+/*}*/

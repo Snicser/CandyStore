@@ -1,2 +1,2 @@
 # CandyStore
-Dit project is een schoolproject. Dit is wat is gerealiseerd in drie weken. De opdracht was alleen. 
+Dit project is een schoolproject. De opdracht was om binnen drie weken een snoepwinkel te maken, verder was de opdracht allen. 

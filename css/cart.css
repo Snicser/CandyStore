@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: rgb(251,157,203);
+    background: -moz-linear-gradient(240deg, rgba(251,157,203,1) 0%, rgba(90,79,140,1) 100%);
+    background: -webkit-linear-gradient(240deg, rgba(251,157,203,1) 0%, rgba(90,79,140,1) 100%);
+    background: linear-gradient(240deg, rgba(251,157,203,1) 0%, rgba(90,79,140,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb9dcb",endColorstr="#5a4f8c",GradientType=1);
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.welcome-text {
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+tbody tr:first-child th {
+    border: none;
+}
+
+[type='number']:focus {
+    outline: none;
+}
+
+.quantity {
+    width: 80px;
+    padding: 2px;
+    font-weight: normal;
+    border: 1px solid #cacaca;
+    background-color: #fefefe;
+}
+
+.cart-product-remove, .cart-product-remove:hover, .cart-product-remove:focus {
+    outline: none;
+    color: #ff0054;
+}
+
+.form-control:focus {
+    border-color: #ff0054;
+    box-shadow: none;
+}
+
+.btn:hover {
+    color: var(--white);
+}
+
+.btn-checkout {
+    color: var(--white);
+    background-color: #ff0054;
+}
+
+.btn-go-back {
+    font-size: 23px;
+    color: #668504;
+}
+
+.btn-go-back:hover {
+    color: #ff0054;
+}
+
+.empty-cart-animation {
+    animation: empty-cart ease 3.5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode:forwards; /*when the spec is finished*/
+}
+
+@keyframes empty-cart{
+    0% {
+        opacity:0;
+        transform:  translate(-1500px,0px)  ;
+    }
+    60% {
+        opacity:1;
+        transform:  translate(30px,0px)  ;
+    }
+    80% {
+        transform:  translate(-10px,0px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .welcome-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .welcome-text {
+        font-size: 1.5rem;
+    }
+}
